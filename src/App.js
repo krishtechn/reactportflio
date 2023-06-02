@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import profileimg from './assets/profileimg.png';
 import { Navbar } from './Components';
 import { BsFillMoonStarsFill, BsYoutube, BsArrowRightShort } from 'react-icons/bs'
 import { AiFillStar,AiFillFacebook,AiFillGithub } from 'react-icons/ai'
 import { resumeurl } from './Components';
 import Aboutpage from './Components/Aboutpage';
-import { aboutdata,aboutdata2 } from './Components/index';
+import { aboutdata,aboutdata2,CoursesCards,GithubUser,gitubuser } from './Components/index';
 import heroimg from '../src/assets/herobg.webp';
+import { Courses } from './Components';
 
 const App = () => {
   return (
@@ -36,169 +36,8 @@ const App = () => {
         </div>
       </section>
 
-      <section>
-        <div className='flex flex-wrap w-full justify-center h-full items-center'>
-          <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] h-[600px]'>
-            <img src="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75" className='w-full h-[400px] object-cover ' />
-            <div className='inset-0 group py-5 px-10'>
-              <h2 className='text-[20px] capitalize font-semibold text-[#D0DFFF]'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-                <p className='text-[14px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>4.7/5, based on 97 reviews</p>
-              </div>
-            </div>
-
-            <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all h-full transform
-                                translate-y-8 opacity-0
-                                group-hover:opacity-100
-                                group-hover:translate-y-0">
-              <h2 className='text-[#D0DFFF] text-[20px] capitalize font-semibold'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-
-                <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>4.7/5, based on 97 reviews</p>
-              </div>
-              <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>Kiss theory-driven courses goodbye and build an interactive movie app that showcases your development prowess</p>
-              <div className='flex w-full justify-end'>
-                <p className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
-                  <span className='py-3'>Learn more</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] h-[600px]'>
-            <img src="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75" className='w-full h-[400px] object-cover ' />
-            <div className='inset-0 group py-5 px-10'>
-              <h2 className='text-[20px] capitalize font-semibold text-[#D0DFFF]'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-                <p className='text-[14px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>4.7/5, based on 97 reviews</p>
-              </div>
-            </div>
-
-            <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all h-full transform
-                                translate-y-8 opacity-0
-                                group-hover:opacity-100
-                                group-hover:translate-y-0">
-              <h2 className='text-[#D0DFFF] text-[20px] capitalize font-semibold'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-
-                <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>4.7/5, based on 97 reviews</p>
-              </div>
-              <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>Kiss theory-driven courses goodbye and build an interactive movie app that showcases your development prowess</p>
-              <div className='flex w-full justify-end'>
-                <p className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
-                  <span className='py-3'>Learn more</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] h-[600px]'>
-            <img src="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75" className='w-full h-[400px] object-cover ' />
-            <div className='inset-0 group py-5 px-10'>
-              <h2 className='text-[20px] capitalize font-semibold text-[#D0DFFF]'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-                <p className='text-[14px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>4.7/5, based on 97 reviews</p>
-              </div>
-            </div>
-
-            <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all h-full transform
-                                translate-y-8 opacity-0
-                                group-hover:opacity-100
-                                group-hover:translate-y-0">
-              <h2 className='text-[#D0DFFF] text-[20px] capitalize font-semibold'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-
-                <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>4.7/5, based on 97 reviews</p>
-              </div>
-              <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>Kiss theory-driven courses goodbye and build an interactive movie app that showcases your development prowess</p>
-              <div className='flex w-full justify-end'>
-                <p className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
-                  <span className='py-3'>Learn more</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] h-[600px]'>
-            <img src="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75" className='w-full h-[400px] object-cover ' />
-            <div className='inset-0 group py-5 px-10'>
-              <h2 className='text-[20px] capitalize font-semibold text-[#D0DFFF]'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-                <p className='text-[14px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>4.7/5, based on 97 reviews</p>
-              </div>
-            </div>
-
-            <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all h-full transform
-                                translate-y-8 opacity-0
-                                group-hover:opacity-100
-                                group-hover:translate-y-0">
-              <h2 className='text-[#D0DFFF] text-[20px] capitalize font-semibold'>Build an AI Powered Movie Application and Master React</h2>
-              <div className='flex items-center justify-between my-4'>
-                <div className='flex text-[#fbbf24]'>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                </div>
-
-                <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>4.7/5, based on 97 reviews</p>
-              </div>
-              <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>Kiss theory-driven courses goodbye and build an interactive movie app that showcases your development prowess</p>
-              <div className='flex w-full justify-end'>
-                <p className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
-                  <span className='py-3'>Learn more</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-        </div>
-      </section>
-
+       {/* our Courses  */}
+        <CoursesCards data={Courses}/>
 
       <section>
         <div className='flex justify-center flex-col items-center my-3 mx-4'>
@@ -236,20 +75,9 @@ const App = () => {
 
       </section>
 
-
-
-      <section className='w-full'>
-        <div className='w-full flex justify-center items-start flex-wrap'>
-          <div className='text-white w-[900px] mb-[30px] mx-6'>
-            <h1 className='text-[50px] capitalize font-bold'><span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>Technical krish</span> Courses are <br />taught by a <span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>GitHub Star</span></h1>
-            <p className='text-[#A3B3BC] text-xl my-4'>The GitHub Stars program features the 100 most <br />influential developers in the world.</p>
-            <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
-          </div>
-
-          <img src={profileimg} className='w-[200px] h-[200px] object-cover  rounded-full' />
-        </div>
-
-      </section>
+        {/* github users  */}
+         <GithubUser data={gitubuser}/>
+       
 
 
       <section className='w-full flex justify-center '>
