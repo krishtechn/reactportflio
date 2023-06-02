@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import profileimg from './assets/profileimg.png';
-import bgimg from '../src/assets/herobg.webp';
 import { Navbar } from './Components';
 import { BsFillMoonStarsFill, BsYoutube, BsArrowRightShort } from 'react-icons/bs'
 import { AiFillStar,AiFillFacebook,AiFillGithub } from 'react-icons/ai'
 import { resumeurl } from './Components';
+import Aboutpage from './Components/Aboutpage';
+import { aboutdata,aboutdata2 } from './Components/index';
+import heroimg from '../src/assets/herobg.webp';
 
 const App = () => {
   return (
@@ -12,6 +14,9 @@ const App = () => {
 
       {/* navbar  */}
       <Navbar title="Technical krish" btn="Resume" resumeurl={resumeurl}/>
+
+      {/* about components */}
+      <Aboutpage data={aboutdata}/>
 
       <section className='flex justify-center items-center flex-col flex-wrap'>
         <div className='text-center'>
