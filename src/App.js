@@ -4,7 +4,7 @@ import { BsFillMoonStarsFill, BsYoutube, BsArrowRightShort } from 'react-icons/b
 import { AiFillStar,AiFillFacebook,AiFillGithub } from 'react-icons/ai'
 import { resumeurl } from './Components';
 import Aboutpage from './Components/Aboutpage';
-import { aboutdata,aboutdata2,CoursesCards,GithubUser,gitubuser } from './Components/index';
+import { aboutdata,aboutdata2,CoursesCards,GithubUser,buttondata,gitubuser } from './Components/index';
 import heroimg from '../src/assets/herobg.webp';
 import { Courses } from './Components';
 
@@ -85,12 +85,14 @@ const App = () => {
           <h1 className='text-[50px] my-[30px] mx-4 capitalize font-bold text-white text-center mb-6'><span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>Launch Your Career</span> Today<br />
             With Technical krish</h1>
 
-          <div className='w-full my-5 flex flex-wrap justify-center'>
+          <div className='w-full my-5 flex flex-wrap justify-center'> 
+            {buttondata.map((items,key)=>{
+              return <a key={key} className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href={items.link}>{items.name}</a>
+            })}
+            
+            {/* <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
             <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
-            <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
-            <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
-            <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a>
-
+            <a className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] py-4 px-10 rounded-full mx-5 my-4 text-white text-xl' target='_blank' href='https://github.com/krishtechn'>Learn more</a> */}
           </div>
 
         </div>
