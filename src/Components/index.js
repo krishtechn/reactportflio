@@ -6,5 +6,7 @@ import { aboutdata,SocialLink,Courses,gitubuser,buttondata } from "../backend/da
 import SocialMediaLink from "./SocialMediaLink";
 import CoursesCards from "./Courses/CoursesCards";
 import GithubUser from "./GithubUser";
+import Footer from "./Footer";
+import Signup from "./auth/Signup";
 
-export {Navbar,BsFillMoonStarsFill,resumeurl,BsYoutube,buttondata,BsArrowRightShort,AiFillStar,AiFillFacebook,AiFillGithub,aboutdata,SocialMediaLink,CoursesCards,Courses,GithubUser,gitubuser}
+export {Navbar,BsFillMoonStarsFill,resumeurl,BsYoutube,buttondata,BsArrowRightShort,AiFillStar,AiFillFacebook,AiFillGithub,aboutdata,SocialMediaLink,CoursesCards,Courses,GithubUser,gitubuser,Footer,Signup}

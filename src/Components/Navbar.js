@@ -5,7 +5,12 @@ const Navbar = ({title,btn,resumeurl}) => {
   return (
 <section className='flex justify-between p-3 flex-wrap items-center'>
         <h1 className='text-white font-sans font-bold text-xl'>{title}</h1>
+            <select >
+              <value value="how to learn html">how to learn html</value>
+            </select>
         <ul className='flex items-center'>
+          
+          
           <li className='mx-4 bg-slate-100 p-3 rounded-full'>
             <BsFillMoonStarsFill className='cursor-pointer text-cyan-600' />
           </li>

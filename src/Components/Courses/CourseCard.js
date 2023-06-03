@@ -36,9 +36,9 @@ const CourseCard = (props) => {
       </div>
       <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>{shortdescription}</p>
       <div className='flex w-full justify-end'>
-        <p className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
+        <a href={`courses/${category}`} className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
           <span className='py-3'>Learn more</span>
-        </p>
+        </a>
       </div>
     </div>
   </div>

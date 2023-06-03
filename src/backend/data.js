@@ -28,13 +28,33 @@ let Courses = [
         coursestitle: "Build An AI Powered Movie Application And Master React",
         shortdescription: "Kiss Theory-Driven Courses Goodbye And Build An Interactive Movie App That Showcases Your Development Prowess",
         category: "web development",
+        details:[
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to get started with programming in general - JavaScript is a great language to learn how to code.",
+        ]
     },
     {
         id: 2,
         courseimg: "https://img.freepik.com/free-vector/cartoon-graphic-design-landing-page_52683-70881.jpg?w=826&t=st=1685721396~exp=1685721996~hmac=204756cb6dcc9e6f1905ae33578c97f112587ed4c06e665860ea4ec78d18d063",
         coursestitle: "Learn Graphics design",
         shortdescription: "Kiss Theory-Driven Courses Goodbye And Build An Interactive Movie App That Showcases Your Development Prowess",
-        category: "web development",
+        category: "graphics design",
+        details:[]
+    },
+    {
+        id: 2,
+        courseimg: "https://img.freepik.com/free-vector/cartoon-graphic-design-landing-page_52683-70881.jpg?w=826&t=st=1685721396~exp=1685721996~hmac=204756cb6dcc9e6f1905ae33578c97f112587ed4c06e665860ea4ec78d18d063",
+        coursestitle: "Learn Graphics design",
+        shortdescription: "Kiss Theory-Driven Courses Goodbye And Build An Interactive Movie App That Showcases Your Development Prowess",
+        category: "graphics design",
+        details:[
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to gain a deep understanding of the most popular programming language in the world.",
+            "You want to get started with programming in general - JavaScript is a great language to learn how to code.",
+        ]
     }
 ]
 
