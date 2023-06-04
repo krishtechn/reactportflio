@@ -5,6 +5,8 @@ import heroimg from '../src/assets/herobg.webp';
 import Detailspage from './Components/Details/Detailspage';
 import { BrowserRouter, Routes, Route,useLocation } from "react-router-dom";
 import LandingPages from './pages/LandingPages';
+import {Footer} from './Components/index';
+import VideoPages from './pages/VideoPages';
 
 const App = () => {
   return (
@@ -16,7 +18,12 @@ const App = () => {
   <Routes> 
      <Route path='' element={<LandingPages />}/>  
      <Route path='/Courses/:category' element={<Detailspage />}/>   
+     <Route path='/Videos/:category/:vcategory' element={<VideoPages />}/>   
   </Routes>
+
+  
+{/* footer componetns  */}
+<Footer />
 </BrowserRouter>
 </div>
 

@@ -33,7 +33,7 @@ const LandingPages = () => {
   {/* our Courses  */}
    <CoursesCards data={Courses}/>
 
- {/* <section>
+  <section>
    <div className='flex justify-center flex-col items-center my-3 mx-4'>
      <h1 className='text-4xl font-bold text-white capitalize text-center font-sans md:text-5xl md:w-[900px] md:m-auto'>Ditch Theory-Driven Courses and
        <span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'> Enter the World</span> of a <span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>True Developer</span></h1>
@@ -67,15 +67,15 @@ const LandingPages = () => {
    </div>
 
 
- </section> */}
+ </section> 
 
    {/* github users  */}
     <GithubUser data={gitubuser}/>
   
 
 
-{/* launch your career  */}
- {/* <section className='w-full flex justify-center '>
+{/* launch your career   */}
+ <section className='w-full flex justify-center '>
    <div>
      <h1 className='text-[50px] my-[30px] mx-4 capitalize font-bold text-white text-center mb-6'><span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>Launch Your Career</span> Today<br />
        With Technical krish</h1>
@@ -87,10 +87,8 @@ const LandingPages = () => {
      </div>
 
    </div>
- </section>  */}
+ </section>
 
-{/* footer componetns  */}
-<Footer />
 </>
   )
 }

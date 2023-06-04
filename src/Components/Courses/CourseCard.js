@@ -3,6 +3,8 @@ import {AiFillStar} from '../index';
 
 const CourseCard = (props) => {
   let {courseimg,coursestitle,category,shortdescription} = props.data;
+  let detailspage = props.detailspage;
+  console.log(props);
   return (
     <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] overflow-hidden h-[550px]'>
     <img src={courseimg} className='w-full h-[400px] object-contains' />
@@ -15,7 +17,7 @@ const CourseCard = (props) => {
           <AiFillStar />
           <AiFillStar />
         </div>
-        <p className='text-[14px] text-[#fff] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>4.7/5, based on 97 reviews</p>
+        <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize'>4.7/5, based on 97 reviews</p>
       </div>
     </div>
 
@@ -32,13 +34,15 @@ const CourseCard = (props) => {
           <AiFillStar />
         </div>
 
-        <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>4.7/5, based on 97 reviews</p>
+        <p className='text-[16px] text-[#A3B3BC] font-medium mx-1 capitalize'>4.7/5, based on 97 reviews</p>
       </div>
-      <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] text-transparent bg-clip-text'>{shortdescription}</p>
+      <p className='text-[16px] my-5 text-[#A3B3BC] font-medium mx-1 capitalize bg-gradient-to-r from-white to-[#f1f1f1] line-clamp-3 text-transparent bg-clip-text'>{shortdescription}</p>
       <div className='flex w-full justify-end'>
-        <a href={`courses/${category}`} className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
+        {detailspage == true ? <a href={`../Videos/${category}/${coursestitle}`} className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
           <span className='py-3'>Learn more</span>
-        </a>
+        </a>:<a href={`courses/${category}`} className='px-10 font-bold py-4 text-xl item-center justify-between text-white bg-blue-600 rounded-full'>
+          <span className='py-3'>Learn more</span>
+        </a>}
       </div>
     </div>
   </div>
