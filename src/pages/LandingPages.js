@@ -1,10 +1,25 @@
 import React from 'react'
 import Aboutpage from '../Components/Aboutpage';
-import { aboutdata, aboutdata2, CoursesCards, GithubUser, Footer, buttondata, gitubuser } from '../Components/index';
+import { aboutdata, aboutdata2, CoursesCards, GithubUser, Footer, buttondata, gitubuser,ReactCardSlider, LatestProjects } from '../Components/index';
 import { Courses } from '../Components/index';
+import ResourceCourses from './resources/ResourceCourses';
+import { popularresource } from '../backend/data';
 
+const sliderClick = ()=>{
+  alert("hello world");
+}
 
+const slides = [
+  {img:"https://picsum.photos/200/150",title:"This is a title",description:"This is a description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/150",title:"This is a second title",description:"This is a second description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/350",title:"This is a third title",description:"This is a third description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/150",title:"This is a fourth title",description:"This is a fourth description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/150",title:"This is a fifth title",description:"This is a fifth description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/150",title:"This is a sixth title",description:"This is a sixth description",clickEvent:sliderClick},
+  {img:"https://picsum.photos/200/150",title:"This is a seventh title",description:"This is a seventh description",clickEvent:sliderClick},
+]
 const LandingPages = () => {
+
   return (
     <>
 
@@ -21,6 +36,8 @@ const LandingPages = () => {
    </div>
  </section>
 
+ <LatestProjects />
+
 
  <section className='flex justify-center items-center text-white mx-4 my-4 text-center'>
    <div className='w-[800px]'>
@@ -33,45 +50,13 @@ const LandingPages = () => {
   {/* our Courses  */}
    <CoursesCards data={Courses}/>
 
-  <section>
-   <div className='flex justify-center flex-col items-center my-3 mx-4'>
-     <h1 className='text-4xl font-bold text-white capitalize text-center font-sans md:text-5xl md:w-[900px] md:m-auto'>Ditch Theory-Driven Courses and
-       <span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'> Enter the World</span> of a <span className='bg-gradient-to-r from-[#4ca5ff] to-[#b673f8] text-transparent bg-clip-text'>True Developer</span></h1>
-
-     <div className='flex flex-wrap w-full md:w-[1300px] md:m-auto'>
-       <div className='w-full group overflow-hidden block mx-5 my-8 rounded-lg cursor-pointer md:w-[500px]'>
-         <img src="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75" className='w-full h-[400px] object-contains' />
-         <div className='inset-0 group py-5 px-10'>
-           <h2 className='text-[30px] capitalize font-bold text-white'>Expert Coaching Support</h2>
-           <div className='flex items-center justify-between my-4'>
-             <p className='text-[20px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>Gain 24/7 access to a private community of coders looking to advance their knowledge and experience, as well as their careers.</p>
-           </div>
-         </div>
-
-       </div>
-
-       <div className='w-full group overflow-hidden block mx-5 my-8 rounded-lg cursor-pointer md:w-[500px]'>
-         <img src="https://img.freepik.com/free-vector/cartoon-graphic-design-landing-page_52683-70881.jpg?w=2000" className='w-full h-[400px] object-contains' />
-         <div className='inset-0 group py-5 px-10'>
-           <h2 className='text-[30px] capitalize font-bold text-white'>Expert Coaching Support</h2>
-           <div className='flex items-center justify-between my-4'>
-             <p className='text-[20px] text-[#eee] font-medium mx-1 capitalize text-transparent bg-clip-text text-[#A3B3BC]'>Gain 24/7 access to a private community of coders looking to advance their knowledge and experience, as well as their careers.</p>
-           </div>
-         </div>
-
-       </div>
-
-     </div>
-
-
-   </div>
-
-
- </section> 
-
+  
    {/* github users  */}
     <GithubUser data={gitubuser}/>
-  
+
+  <ResourceCourses rdata={popularresource} title="Ditch Theory-Driven Courses and
+Enter the World of a True Developer"/>
+
 
 
 {/* launch your career   */}

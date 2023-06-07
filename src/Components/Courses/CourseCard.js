@@ -4,10 +4,10 @@ import {AiFillStar} from '../index';
 const CourseCard = (props) => {
   let {courseimg,coursestitle,category,shortdescription} = props.data;
   let detailspage = props.detailspage;
-  console.log(props);
+  
   return (
     <div className='w-full group overflow-hidden block mx-5 bg-[#161B22] my-8 rounded-lg cursor-pointer md:w-[500px] overflow-hidden h-[550px]'>
-    <img src={courseimg} className='w-full h-[400px] object-contains' />
+    <img src={courseimg} className='w-full h-[400px] object-contains hover:scale-125 duration-700 ease-in-out' />
     <div className='inset-0 group py-5 px-10'>
       <h2 className='text-[20px] capitalize font-semibold text-[#D0DFFF] line-clamp-1'>{coursestitle}</h2>
       <div className='flex items-center justify-between my-4'>
@@ -21,7 +21,7 @@ const CourseCard = (props) => {
       </div>
     </div>
 
-    <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all h-full transform
+    <div className="py-5 px-10  bg-[#161B22] relative top-[-290px] transition-all duration-700 h-full transform
                         translate-y-8 opacity-0
                         group-hover:opacity-100
                         group-hover:translate-y-0">

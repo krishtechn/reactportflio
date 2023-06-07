@@ -9,6 +9,9 @@ const Detailspage = () => {
   let course = useParams();
   let category = course.category;
   
+  document.title = `online Course -- ${category}`;
+  
+
   // filter data with category
   let cdata = Courses.filter((items)=>{
     return items.category == category;

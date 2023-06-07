@@ -7,7 +7,7 @@ let aboutdata = {
     lasttext: "Coaching",
     shorttext: "Showcase your skills with practical development experience and land the coding career of your dreams",
     btn: "Explore Courses",
-    btnurl: "/",
+    btnurl: "/youtube-videos",
     heroimg: `${codingimg}`,
 }
 
@@ -199,4 +199,75 @@ let buttondata = [
     }
 ]
 
-export { aboutdata, Courses, gitubuser ,buttondata}
+
+//popular resource youtube video
+let popularresource = [
+    {
+        id:1,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/214db68ab7ea3646c619f0912456e2a128701682-644x360.png",
+        title:"Build and Deploy a Modern Web 3.0 Blockchain App | Solidity, Smart Contracts, Crypto",
+        link:""
+    },
+    {
+        id:2,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/768018603bc23691903e815715d1b135c294c002-1058x588.png",
+        title:"ECommerce Web Shop - Build & Deploy an Amazing App | React.js, Commerce.js, Stripe",
+        link:"",
+    },
+    {
+        id:1,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/96ff11479743ea553c23602b742c0f9909bfd04b-1058x588.png",
+        title:"MERN Auth - Login with Email (JWT) + Google OAuth Authentication | React, Node, Express, MongoDB",
+        link:""
+    }
+]
+
+
+//popular resource youtube video
+let latestproject = [
+    {
+        id:1,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/214db68ab7ea3646c619f0912456e2a128701682-644x360.png",
+        title:"Ecommerce web app",
+        link:"",
+        category:"web"
+    },
+    {
+        id:2,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/768018603bc23691903e815715d1b135c294c002-1058x588.png",
+        title:"Ai web app",
+        link:"",
+        category:"web"
+    },
+    {
+        id:3,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/214db68ab7ea3646c619f0912456e2a128701682-644x360.png",
+        title:"Ecommerce web app",
+        link:"",
+        category:"app"
+    },
+    {
+        id:4,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/214db68ab7ea3646c619f0912456e2a128701682-644x360.png",
+        title:"Ecommerce web app",
+        link:"",
+        category:"web"
+    },
+    {
+        id:5,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/768018603bc23691903e815715d1b135c294c002-1058x588.png",
+        title:"Ai web app",
+        link:"",
+        category:"web"
+    },
+    {
+        id:6,
+        img:"https://cdn.sanity.io/images/x22npxvj/production/214db68ab7ea3646c619f0912456e2a128701682-644x360.png",
+        title:"Ecommerce web app",
+        link:"",
+        category:"app"
+    },
+];
+
+
+export { aboutdata, Courses, gitubuser ,buttondata,popularresource,latestproject}
