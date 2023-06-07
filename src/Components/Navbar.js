@@ -13,7 +13,8 @@ const Navbar = ({title,btn,resumeurl}) => {
           <li className='mx-4 bg-slate-100 p-3 rounded-full' onClick={()=>ChangeColor()}>
             <BsFillMoonStarsFill className='cursor-pointer text-cyan-600' />
           </li>
-          <li className='bg-gradient-to-r from-blue-700 to-blue-800 px-4 py-1.5 rounded-lg text-white'><a href={resumeurl} download={true}>{btn}</a></li>
+          <li className='bg-gradient-to-r from-blue-700 to-blue-800 px-5 py-2 rounded-full text-white'><a href={resumeurl} download={true}>{btn}</a></li>
+          <a href='/auth/Signup' className='mx-4 bg-slate-100 py-2 px-6 rounded-full'>Signup</a>
         </ul>
       </section>
 

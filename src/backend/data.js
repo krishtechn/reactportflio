@@ -270,4 +270,8 @@ let latestproject = [
 ];
 
 
-export { aboutdata, Courses, gitubuser ,buttondata,popularresource,latestproject}
+let allCourses = [...popularresource]; 
+Array.prototype.push.apply(allCourses,latestproject);
+
+
+export { aboutdata, Courses, gitubuser ,buttondata,popularresource,latestproject,allCourses}

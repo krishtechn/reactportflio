@@ -34,7 +34,7 @@ const Footer = () => {
      </div>
      
     <div className='w-full my-4 px-9 md:w-[700px]'>
-     <h1 className='text-3xl font-bold text-white'>Get the 2022 Front-End Web Developer Roadmap</h1>
+     <h1 className='text-3xl font-bold text-white'>Get the {new Date().getFullYear()} Front-End Web Developer Roadmap</h1>
      <p className='text-[#A3B3BC] text-[16px]'>This roadmap will provide you with a step-by-step journey and project ideas that will accelerate your career.</p>
       <div className='flex flex-col'>
        <input type='text' className='mr-2 my-3 py-3 px-5 text-[#A3B3BC] border-none outline-none text-[17px] bg-[#1F2937] font-bold rounded-full drop-shadow-lg' placeholder='Your Name'/>
